@@ -6,8 +6,11 @@ import (
 	"os"
 )
 
+var locationUrls = Config{next: "https://pokeapi.co/api/v2/location-area"}
+
 func main() {
 	reader := bufio.NewScanner(os.Stdin)
+
 	for {
 		fmt.Print("Pokedex > ")
 		reader.Scan()
