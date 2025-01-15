@@ -9,7 +9,7 @@ const (
 )
 
 func main() {
-	pokeClient := NewClient(5 * time.Second)
+	pokeClient := NewClient(5*time.Second, 5*time.Minute)
 	cfg := &config{
 		pokeapiClient: pokeClient,
 	}
